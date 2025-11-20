@@ -1,0 +1,19 @@
+name: weplan
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pyproj
+  - gdal
+  - matplotlib
+  - requests
+  - dask
+  - wheel
+  - pre-commit
+  - pip
+  - pip:
+    - sepal_ui==2.21.0
+    - git+https://github.com/openforis/earthengine-api.git@v1.1.5rc0
+    - git+https://github.com/12rambau/xarray_leaflet.git@single_band_mask#egg=xarray_leaflet
